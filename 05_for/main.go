@@ -8,7 +8,7 @@ func main() {
 	// while loop
 	i := 1
 	for i <= 3 {
-		fmt.Println(i);
+		fmt.Println(i)
 		i += 1
 	}
 
@@ -17,8 +17,21 @@ func main() {
 		fmt.Println(i)
 	}
 
-	// infinite loop
-	for {
-		fmt.Println("hello")
+	for i := 0; i <= 5; i++ {
+		if i == 2 {
+			continue
+		}
+
+		fmt.Println(i)
 	}
+
+	// range
+	for i := range 3 {
+		fmt.Println(i)
+	}
+
+	// // infinite loop
+	// for {
+	// 	fmt.Println("hello")
+	// }
 }
